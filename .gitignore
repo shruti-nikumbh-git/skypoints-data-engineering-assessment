@@ -217,6 +217,18 @@ tempCodeRunnerFile.py
 # Marimo
 marimo/_static/
 marimo/_lsp/
+
+
+# SkyPoints project-specific exclusions
+data/
+*.log
+.env
+.DS_Store
+
+# Local Spark and test files
+spark-warehouse/
+metastore_db/
+.pytest_cache/
 __marimo__/
 
 # Streamlit
