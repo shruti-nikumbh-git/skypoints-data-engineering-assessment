@@ -492,16 +492,60 @@ The notebook names above are suggested names. Replace them with the actual noteb
 
 ## 8. How to Execute the Project
 
-1. Clone the repository:
+### Prerequisites
+- Python 3.11
+- Java compatible with PySpark
+- Required Python dependencies
+
+### Step 1: Clone the repository
 
 ```bash
-git clone https://github.com/your-username/skypoints-data-engineering-assessment.git
+git clone https://github.com/shruti-nikumbh-git/skypoints-data-engineering-assessment.git
 ```
 
-2. Navigate to the project directory:
+### Step 2: Navigate to the project folder
 
 ```bash
 cd skypoints-data-engineering-assessment
 ```
 
-3. Install
+### Step 3: Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Open the notebooks
+
+Open the three project notebooks using Google Colab or Jupyter Notebook.
+
+### Step 5: Upload source files
+
+Upload the required input files:
+- IND.xlsx
+- USA.xlsx
+- AUS.xlsx
+
+Also provide the redemption JSON input used in the notebook.
+
+### Step 6: Execute the notebooks
+
+Execute the notebooks in the required order:
+
+1. Bronze ingestion
+2. Silver transformation and data validation
+3. Gold processing and redemption transactions
+
+### Step 7: Verify the output
+
+Check the final record counts and validation results against the results documented above.
+
+### Step 8: Run automated tests
+
+If the PyTest test file is included in the repository, execute:
+
+```bash
+pytest -v tests/
+```
+
+**Note:** File paths may need to be updated according to your local or Colab environment. The Azure architecture is proposed; the demonstrated execution was performed in Google Colab.
